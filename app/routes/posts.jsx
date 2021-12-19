@@ -1,5 +1,11 @@
-const posts = () => {
-	return <div></div>;
-};
+import { Outlet } from 'remix';
 
-export default posts;
+function Posts() {
+	return (
+		<>
+			<Outlet />
+		</>
+	);
+}
+
+export default Posts;
